@@ -1,0 +1,9 @@
+extends layout 
+
+block content 
+ body
+  form(action='', method='POST')
+    p
+      label(for="text") Text:
+      input(type='text', name='text')
+      input(type='submit', value='Submit')

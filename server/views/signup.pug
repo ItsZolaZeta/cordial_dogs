@@ -1,0 +1,40 @@
+extends layout 
+
+block content 
+ body
+  form(action='/user/signup', method='POST')
+    p
+      label(for="username") Username:
+      input(type='text', name='username')
+
+      label(for="password") Password:
+      input(type='text', name='password')
+
+      label(for="first_name") first_name:
+      input(type='text', name='first_name')
+
+      label(for="last_name") last_name:
+      input(type='text', name='last_name')
+
+      label(for="date_of_birth") date_of_birth:
+      input(type='date', name='date_of_birth')
+
+      label(for="isAdmin") isAdmin:
+      input(type='checkbox', name='isAdmin' unchecked)
+
+
+      input(type='submit', value='Submit')
+
+
+
+
+
+
+    //-    username: {type: String, required: true, maxLength: 30},
+    //- hashed_password: {type: String, required: true},
+    //- first_name: {type: String, required: false, maxLength: 20},
+    //- last_name: {type: String, required: false, maxLength: 20},
+    //- date_of_birth: {type: Date, required: false},
+    //- isAdmin: {type: Boolean, default: false},
+    //- dogs: [{type: Schema.Types.ObjectId, ref:"Dog"}],
+    //- comments: [{type: Schema.Types.ObjectId, ref:"Comment"}]
